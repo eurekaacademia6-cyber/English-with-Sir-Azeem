@@ -1,0 +1,17 @@
+<resources>
+    <color name="primary">#8B1238</color>
+    <color name="primary_dark">#4A0820</color>
+    <color name="gold">#FFC857</color>
+    <color name="bg">#EEF2F8</color>
+    <color name="card">#CCFFFFFF</color>
+    <color name="text">#182033</color>
+    <color name="muted">#667085</color>
+    <color name="border">#55FFFFFF</color>
+    <color name="success">#087F5B</color>
+    <color name="blue">#4F7CFF</color>
+    <color name="purple">#8B5CF6</color>
+    <color name="green">#19A974</color>
+    <color name="orange">#F59E0B</color>
+    <color name="teal">#0EA5A4</color>
+    <color name="pink">#EC4899</color>
+</resources>

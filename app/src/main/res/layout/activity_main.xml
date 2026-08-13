@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/bg_main" android:fillViewport="true">
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingBottom="28dp">
+
+    <LinearLayout android:orientation="vertical" android:padding="22dp" android:background="@drawable/bg_header" android:elevation="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:text="ENGLISH WITH SIR AZEEM" android:textColor="@color/gold" android:textSize="13sp" android:textStyle="bold" android:letterSpacing="0.08" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:text="Student Communication" android:textColor="@android:color/white" android:textSize="28sp" android:textStyle="bold" android:layout_marginTop="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:text="A clean, fast workspace for communicating with your students." android:textColor="#FBEAF0" android:textSize="14sp" android:layout_marginTop="6dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout android:orientation="vertical" android:padding="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_blue_block" android:elevation="3dp" android:padding="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:text="✦  MESSAGE" android:textStyle="bold" android:textColor="#3556A8" android:textSize="12sp" android:layout_marginBottom="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <EditText android:id="@+id/message" android:gravity="top" android:minLines="7" android:hint="Write or paste your student message here..." android:textSize="15sp" android:textColor="@color/text" android:hintTextColor="#7382A5" android:background="@drawable/bg_card" android:inputType="textMultiLine|textCapSentences" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_purple_block" android:elevation="3dp" android:padding="4dp" android:layout_marginTop="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:text="✦  STUDENT NUMBERS" android:textStyle="bold" android:textColor="#7046B8" android:textSize="12sp" android:layout_marginBottom="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <EditText android:id="@+id/numbers" android:gravity="top" android:minLines="7" android:hint="Paste numbers — one per line, comma-separated, or with spaces" android:textSize="15sp" android:textColor="@color/text" android:hintTextColor="#7D6A9F" android:background="@drawable/bg_card" android:inputType="phone|textMultiLine" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <TextView android:id="@+id/count" android:text="0 valid numbers" android:textColor="@color/success" android:textStyle="bold" android:layout_marginTop="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_glass" android:elevation="4dp" android:padding="10dp" android:layout_marginTop="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:text="SEND THROUGH" android:textStyle="bold" android:textColor="@color/muted" android:textSize="11sp" android:layout_marginBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Button android:id="@+id/whatsapp" android:text="WhatsApp  ›" android:textAllCaps="false" android:textColor="@android:color/white" android:textStyle="bold" android:textSize="15sp" android:background="@drawable/bg_green_button" android:layout_weight="1" android:layout_marginEnd="6dp" android:layout_width="0dp" android:layout_height="54dp"/>
+                <Button android:id="@+id/sms" android:text="SMS  ›" android:textAllCaps="false" android:textColor="@android:color/white" android:textStyle="bold" android:textSize="15sp" android:background="@drawable/bg_orange_button" android:layout_weight="1" android:layout_marginStart="6dp" android:layout_width="0dp" android:layout_height="54dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_teal_block" android:elevation="3dp" android:padding="4dp" android:layout_marginTop="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:text="✦  CURRENT STUDENT" android:textStyle="bold" android:textColor="#087F78" android:textSize="11sp" android:layout_marginBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:id="@+id/progress" android:text="Ready — add student numbers" android:textSize="18sp" android:textStyle="bold" android:textColor="@color/text" android:gravity="center" android:background="@drawable/bg_card" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp">
+            <Button android:id="@+id/previous" android:text="‹  Previous" android:textAllCaps="false" android:textColor="@color/text" android:background="@drawable/bg_soft_button" android:layout_weight="1" android:layout_marginEnd="4dp" android:layout_width="0dp" android:layout_height="50dp"/>
+            <Button android:id="@+id/next" android:text="Next  ›" android:textAllCaps="false" android:textColor="@android:color/white" android:textStyle="bold" android:background="@drawable/bg_red_button" android:layout_weight="1" android:layout_marginStart="4dp" android:layout_marginEnd="4dp" android:layout_width="0dp" android:layout_height="50dp"/>
+            <Button android:id="@+id/skip" android:text="Skip  ›" android:textAllCaps="false" android:textColor="@color/text" android:background="@drawable/bg_soft_button" android:layout_weight="1" android:layout_marginStart="4dp" android:layout_width="0dp" android:layout_height="50dp"/>
+        </LinearLayout>
+
+        <Button android:id="@+id/clear" android:text="Clear Campaign" android:textAllCaps="false" android:textColor="@android:color/white" android:background="@drawable/bg_pink_button" android:layout_marginTop="12dp" android:layout_width="match_parent" android:layout_height="50dp"/>
+        <TextView android:text="WhatsApp opens the chat with your message pre-filled. You tap Send yourself." android:textSize="12sp" android:textColor="@color/muted" android:gravity="center" android:layout_marginTop="12dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:text="English with Sir Azeem  •  Student Communication Tool" android:textSize="11sp" android:textColor="@color/muted" android:gravity="center" android:layout_marginTop="18dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
