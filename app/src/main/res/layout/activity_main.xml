@@ -12,12 +12,12 @@
 
         <LinearLayout android:orientation="vertical" android:background="@drawable/bg_blue_block" android:elevation="3dp" android:padding="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
             <TextView android:text="✦  MESSAGE" android:textStyle="bold" android:textColor="#3556A8" android:textSize="12sp" android:layout_marginBottom="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
-            <EditText android:id="@+id/message" android:gravity="top" android:minLines="7" android:hint="Write or paste your student message here..." android:textSize="15sp" android:textColor="@color/text" android:hintTextColor="#7382A5" android:background="@drawable/bg_card" android:inputType="textMultiLine|textCapSentences" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <EditText android:id="@+id/message" android:gravity="top" android:minLines="7" android:hint="Write or paste your student message here..." android:textSize="15sp" android:textColor="@color/text" android:textColorHint="#7382A5" android:background="@drawable/bg_card" android:inputType="textMultiLine|textCapSentences" android:layout_width="match_parent" android:layout_height="wrap_content"/>
         </LinearLayout>
 
         <LinearLayout android:orientation="vertical" android:background="@drawable/bg_purple_block" android:elevation="3dp" android:padding="4dp" android:layout_marginTop="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
             <TextView android:text="✦  STUDENT NUMBERS" android:textStyle="bold" android:textColor="#7046B8" android:textSize="12sp" android:layout_marginBottom="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
-            <EditText android:id="@+id/numbers" android:gravity="top" android:minLines="7" android:hint="Paste numbers — one per line, comma-separated, or with spaces" android:textSize="15sp" android:textColor="@color/text" android:hintTextColor="#7D6A9F" android:background="@drawable/bg_card" android:inputType="phone|textMultiLine" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <EditText android:id="@+id/numbers" android:gravity="top" android:minLines="7" android:hint="Paste numbers — one per line, comma-separated, or with spaces" android:textSize="15sp" android:textColor="@color/text" android:textColorHint="#7D6A9F" android:background="@drawable/bg_card" android:inputType="phone|textMultiLine" android:layout_width="match_parent" android:layout_height="wrap_content"/>
             <TextView android:id="@+id/count" android:text="0 valid numbers" android:textColor="@color/success" android:textStyle="bold" android:layout_marginTop="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
         </LinearLayout>
 
